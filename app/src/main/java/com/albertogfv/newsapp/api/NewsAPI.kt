@@ -1,6 +1,6 @@
 package com.albertogfv.newsapp.api
 
-import com.albertogfv.newsapp.NewsResponse
+import com.albertogfv.newsapp.models.NewsResponse
 import com.albertogfv.newsapp.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
