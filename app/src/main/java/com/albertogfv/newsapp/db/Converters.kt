@@ -5,12 +5,13 @@ import com.albertogfv.newsapp.models.Source
 
 class Converters {
 
+    @TypeConverter
     fun fromSource(source: Source): String {
         return source.name
     }
 
     @TypeConverter
-    fun tosource(name: String): Source {
+    fun toSource(name: String): Source {
         return Source(name, name)
     }
 }

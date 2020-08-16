@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.albertogfv.newsapp.R
 import com.albertogfv.newsapp.models.Article
 import com.bumptech.glide.Glide
+import kotlinx.android.synthetic.main.item_article_preview.view.*
 
 class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>(){
 
@@ -56,7 +57,7 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>(){
 
     private var onItemClickListener: ((Article) -> Unit)? = null
 
-    fun setonItemclickedListener(listener: (Article) -> Unit) {
+    fun setOnItemClickedListener(listener: (Article) -> Unit) {
         onItemClickListener = listener
     }
 }
